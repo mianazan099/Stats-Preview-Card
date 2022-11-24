@@ -9,18 +9,53 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <!-- Get insights that help your business grow. -->
-    <!-- Discover the benefits of data analytics and make better decisions regarding revenue, customer  -->
-    <!-- experience, and overall efficiency. -->
-    <!-- 10k+ companies -->
-    <!-- 314 templates -->
-    <!-- 12m+ queries -->
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <body
+    class="font-Inter grid min-h-screen place-content-center bg-DarkBlue text-[15px] text-white"
+  >
+    <div
+      class="m-4 overflow-hidden rounded-xl bg-darkDesaturatedBlue text-center d:grid d:max-w-[1000px] d:grid-cols-2 d:text-left"
+    >
+      <div class="relative d:col-[2]">
+        <div
+          class="aspect-[4/3] h-full w-full bg-[url(./images/image-header-mobile.jpg)] bg-cover bg-center bg-no-repeat d:bg-[url(./images/image-header-desktop.jpg)]"
+        ></div>
+        <div class="absolute inset-0 bg-softViolet opacity-50"></div>
+      </div>
+      <div class="p-10 d:col-[1] d:row-[1] d:grid d:items-center">
+        <h1 class="mb-6 text-3xl font-bold">
+          Get <span class="text-softViolet">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="mx-auto px-2 text-white-300 d:px-0">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div
+          class="space-y-6 pt-6 font-lexendDeca d:flex d:justify-between d:space-y-0"
+        >
+          <div>
+            <p class="text-xl font-bold">10k+</p>
+            <p class="font-regular uppercase text-white-200">companies</p>
+          </div>
+          <div>
+            <p class="text-xl font-bold">314</p>
+            <p class="font-regular uppercase text-white-200">templates</p>
+          </div>
+          <div>
+            <p class="text-xl font-bold">12m+</p>
+            <p class="font-regular uppercase text-white-200">queries</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
