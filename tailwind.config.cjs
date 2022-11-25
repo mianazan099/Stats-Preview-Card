@@ -2,11 +2,15 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
+    backgroundImage: {
+      header: "url(./Image/image-header.jpg)",
+    },
     screens: {
-      d: "690px",
+      lg: "800px",
+      xl: "860px",
     },
     colors: {
-      DarkBlue: "hsl(233, 47%, 7%)",
+      darkBlue: "hsl(233, 47%, 7%)",
       darkDesaturatedBlue: "hsl(244, 38%, 16%)",
       softViolet: "hsl(277, 64%, 61%)",
       white: {

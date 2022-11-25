@@ -2,57 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-    <title>Frontend Mentor | Stats preview card component</title>
-    <link rel="stylesheet" href="./output.css" />
+    <title>Stats Preview Card</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body
-    class="font-Inter grid min-h-screen place-content-center bg-DarkBlue text-[15px] text-white"
+    class="font-inter min-h-screen grid place-content-center bg-darkBlue text-white text-[15px]"
   >
     <div
-      class="m-4 overflow-hidden rounded-xl bg-darkDesaturatedBlue text-center d:grid d:max-w-[1000px] d:grid-cols-2 d:text-left"
+      class="bg-darkDesaturatedBlue text-center m-6 rounded-xl overflow-hidden max-w-sm lg:grid lg:grid-cols-2 lg:max-w-5xl lg:text-left"
     >
-      <div class="relative d:col-[2]">
+      <div class="relative lg:col-[2]">
         <div
-          class="aspect-[4/3] h-full w-full bg-[url(./images/image-header-mobile.jpg)] bg-cover bg-center bg-no-repeat d:bg-[url(./images/image-header-desktop.jpg)]"
+          class="aspect-[4/3] bg-header bg-no-repeat bg-cover bg-center lg:aspect-auto lg:h-full lg:w-full"
         ></div>
         <div class="absolute inset-0 bg-softViolet opacity-50"></div>
       </div>
-      <div class="p-10 d:col-[1] d:row-[1] d:grid d:items-center">
-        <h1 class="mb-6 text-3xl font-bold">
+      <div class="p-6 lg:col-[1] lg:row-[1] lg:grid lg:items-center lg:p-16">
+        <h1 class="mb-6 text-3xl font-bold lg:text-4xl">
           Get <span class="text-softViolet">insights</span> that help your
           business grow.
         </h1>
-        <p class="mx-auto px-2 text-white-300 d:px-0">
+        <p class="text-white-300 max-w-[86%] mx-auto lg:mx-0">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
         <div
-          class="space-y-6 pt-6 font-lexendDeca d:flex d:justify-between d:space-y-0"
+          class="space-y-6 pt-6 font-lexendDeca xl:flex xl:space-y-0 xl:justify-between xl:max-w-[90%] xl:pt-16 uppercase"
         >
           <div>
-            <p class="text-xl font-bold">10k+</p>
-            <p class="font-regular uppercase text-white-200">companies</p>
+            <p class="text-xl font-bold lg:text-2xl">10k+</p>
+            <p class="text-white-200 
+            
+            text-[12px] lg:text-sm">companies</p>
           </div>
           <div>
-            <p class="text-xl font-bold">314</p>
-            <p class="font-regular uppercase text-white-200">templates</p>
+            <p class="text-xl font-bold lg:text-2xl">314</p>
+            <p class="text-white-200 text-[12px] lg:text-sm">templates</p>
           </div>
           <div>
-            <p class="text-xl font-bold">12m+</p>
-            <p class="font-regular uppercase text-white-200">queries</p>
+            <p class="text-xl font-bold lg:text-2xl">12m+</p>
+            <p class="text-white-200 text-[12px] lg:text-sm">queries</p>
           </div>
         </div>
       </div>
